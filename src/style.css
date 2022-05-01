@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* html,
+body {
+  overflow: hidden;
+} */
+
+html {
+  background-color: #1e1a20;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  font-family: "Cabin", sans-serif;
+  color: #ffeded;
+  text-transform: uppercase;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+section:nth-child(odd) {
+  justify-content: flex-end;
+}
+
+.text-containers {
+  display: flex;
+  flex-direction: column;
+  /* height: auto; */ /* <- later when more projects are added*/
+  height: 50%;
+  width: 50%;
+  text-align: center;
+  justify-content: space-evenly;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+#projects {
+  display: grid;
+  position: relative;
+  /* height: 500px;
+  width: auto; */
+  grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 0.1rem;
+  row-gap: 1rem;
+  justify-content: space-evenly;
+  /* background-color: aliceblue; */
+}
+
+#contacts {
+  display: grid;
+  position: relative;
+  grid-template-columns: 50% 50%;
+  column-gap: 0.1rem;
+  row-gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.projs-thumbnails,
+.conts-thumbnails {
+  margin: 0;
+  padding: 0;
+}
+
+.projs-thumbnails img {
+  height: 2.5rem;
+  width: auto;
+  transition: transform 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.conts-thumbnails img {
+  height: 5.5rem;
+  width: auto;
+  transition: transform 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.projs-thumbnails:hover img,
+.conts-thumbnails:hover img {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%) !important;
+  z-index: 10;
+}
