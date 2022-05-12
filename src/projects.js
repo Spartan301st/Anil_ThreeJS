@@ -59,6 +59,11 @@ const projects = [
     url: "https://clip-proj-angular.vercel.app/",
     img: "project_imgs/12.clip.png",
   },
+  {
+    name: "Physics world app",
+    url: "https://anil-three-js.vercel.app/",
+    img: "project_imgs/13.physics_world.png",
+  },
 ];
 
 const contacts = [
