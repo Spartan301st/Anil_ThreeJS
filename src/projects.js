@@ -61,7 +61,7 @@ const projects = [
   },
   {
     name: "Physics world app",
-    url: "https://anil-three-js.vercel.app/",
+    url: "https://physics-world.vercel.app/",
     img: "project_imgs/13.physics_world.png",
   },
 ];
